@@ -10,10 +10,10 @@ class BootScene extends Phaser.Scene {
     }
 
     create(){
-        //this.scene.start('title-scene');
+        this.scene.start('title-scene');
 
         /// TODO: Trabajando directamente en el juego, descomentar la linea anterior para iniciar desde el titulo.
-        this.scene.start('game-scene');
+        // this.scene.start('game-scene');
     }
 
     //// Metodos para la carga
@@ -34,6 +34,5 @@ class BootScene extends Phaser.Scene {
         this.load.audio('goldSound', ['assets/audio/Pickup.wav']);
         this.load.audio('buttonHoverSound', ['assets/audio/menu/Menu_Sounds_Hover.wav']);
         this.load.audio('buttonClick', ['assets/audio/menu/Menu_Sounds_Forward.wav']);
-
     }
 }
